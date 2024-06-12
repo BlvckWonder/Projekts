@@ -5,7 +5,7 @@ window.onload = function() {
 function zimetuzcanva() {
   var kanva  = document.getElementById("zimejums");
   var konteksts = kanva.getContext("2d");
-  konteksts.fillStyle = "green";
+  konteksts.fillStyle = "blue";  
   konteksts.fillRect(20,20,150,100);
 }
 function taisnsturis() {
@@ -20,8 +20,8 @@ function aplis() {
   konteksts.beginPath();
   konteksts.arc(200,200,50,0,2*Math.PI);
   konteksts.lineWidth = 20;
-  konteksts.fillStyle = "yellow
-  konteksts.strokeStyle = "red";
+  konteksts.fillStyle = "yellow";
+  konteksts.strokeStyle = "pink";
   konteksts.fill();
   konteksts.stroke();
 }
