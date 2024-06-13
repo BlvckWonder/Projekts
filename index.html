@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Mana mājas lapa</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
-
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mana mājas lapa</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  </head>
 
 <body>
-  <header>
-    <h1>Sveika pasaule!</h1>
-  </header>
+    <header>
+      <nav class="topnav">
+        <a href="index.html" class="active">Sākums</a>
+        <a href="kontakti.html">Kontakti</a>
+        <a href="parmani.html">Par mani </a>
+      </nav>  
+
+    </header>
   <hr>
-  <main>
-    <section id="content">
-      <p> Šis ir mans pirmais HTML!</p>
-      <div id="image">
+<main>
+  <h1>Sveika pasaule!</h1>
+  <p>Tests vai iet krāsa</p>
+      <section id="saturs">
+         <p> Šis ir mans pirmais HTML!</p>
+        <aside class="sidebar">
+            <a href="#saturs">Saturs</a>
+            <a href="#tabula">Tabula</a>
+        </aside>
+  
+        <div id="image">
         <img src="5 Typographic Portrait Artists That Will Inspire You  _ Blog _ Domestika.jpg" width="200px">
-      </div>
-      <ol type="A" start="3">
+        </div>
+      
+        
+        <ol type="A" start="3">
         <li>Pirmais</li>
         <li>Otrais</li>
         <li>Trešais</li>
@@ -44,20 +55,45 @@
 
         </ul>
       </ol>
-
-
+      
+<section id="tabula">
+      <table border="1">
+        <tr>
+          <td>1.rinda 1.kolonna</td>
+          <td>1.rinda 2.kolonna</td>
+        </tr>
+        <tr>
+          <td>2. rinda 1. kolonna</td>
+          <td>2. rinda 2. kolonna</td>
+        </tr>
+        <tr>
+          <td>3. rinda 1. kolonna</td>
+          <td>3. rinda 2. kolonna</td>
+        </tr>
+        <tr>
+          <td>4. rinda 1. kolonna</td>
+          <td>4. rinda 2. kolonna</td>
+        </tr>
+      </table>
+</section>
       <a href="kontakti.html">Sākums</a>
-    </section>
-    <section id="canva">
-      <canvas id="zimejums" width="500" height="400"></canvas><br>
+</section>
+
+  
+<section id="canva">
+  <canvas id="zimejums" width="500" height="400"></canvas><br>
       <button onclick="taisnsturis()">Parādīt taisnstūri</button>
       <button onclick="aplis()">Parādīt apli</button>
       <button onclick="linija()">Parādīt līniju</button>
-    </section>
-  </main>
+      <button onclick="teksts()">Parādīt tekstu</button>
+</section>
+  
 
-  <footer>&copy;Mana firma</footer>
-  <script src="script.js"></script>
+<footer>&copy;Mana firma</footer>
+<script src="script.js"></script>
+
+
 </body>
+</main>
 
 </html>
