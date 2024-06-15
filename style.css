@@ -4,10 +4,18 @@ html {
   padding: 0;
   width: 100%;
   font-family:Sofia, sans-serif;
-
 }
+
+html { 
+  background: url(01.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body{
-  background-color:#ffffff; /*fona krāsa*/
+
   font-family: Arial, Helvetica, sans-serif;
 }
 .topnav{
@@ -58,7 +66,7 @@ footer {
   background-color: #333;
   color: #fafafa;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   positon: fixed;
   bottom: 0;
   width: 100%;
@@ -91,8 +99,8 @@ button:hover {
 }
 
 #saturs p {
-  color: #4d5656;
-  font-size: 30p;
+  color: #5d043c;
+  font-size: 30px;
 }
 
 #image {
@@ -116,7 +124,15 @@ button:hover {
   #tabula table {
     width: 100%;
     border-collapse: collapse;
+    background-color: white;
   }
+
+  #tabula td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: justify;
+  }
+  
   
 h1 {
     color:#fd7cdb;
@@ -125,3 +141,5 @@ h1 {
   fond-size: 16mm;
 p {
   color:#78bf0d;
+
+
