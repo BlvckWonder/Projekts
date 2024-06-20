@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Mana mājas lapa</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
 
 <body>
     <header>
       <nav class="topnav">
         <a href="index.html" class="active">Sākums</a>
-        <a href="kontakti.html">Kontakti</a>
-        <a href="par mani.html">Par mani </a>
-        <a href="portfolio.html">Portfolio</a>
+        <a href="kontakti.html" onclick="atjaunotIetvaru(this); return false;">Kontakti</a>
+        <a href="par mani.html"onclick="atjaunotIetvaru(this); return false;">Par mani</a>
+        <a href="portfolio.html"onclick="atjaunotIetvaru(this); return false;">Portfolio</a>
       </nav>  
 
-    </header>
-  <hr>
-<main>
+</header>
+
+<aside class="sidebar">
+      <a href="#saturs">Saturs</a>
+      <a href="#tabula">Tabula</a>
+      <a href="#video">Video</a> 
+      <a href="#audio">Audio</a>
+</aside>
+  
+<main id="lapas_saturs">
+  
   <h1>Sveika pasaule!</h1>
   <p>Tests vai iet krāsa</p>
       <section id="saturs">
          <p> Šis ir mans pirmais HTML!</p>
-        <aside class="sidebar">
-            <a href="#saturs">Saturs</a>
-            <a href="#tabula">Tabula</a>
-            <a href="#video">Video</a> 
-            <a href="#audio">Audio</a>
-        </aside>
-  
+
+<main id="lapas_saturs">
+
+
         <div id="image">
         <img src="5 Typographic Portrait Artists That Will Inspire You  _ Blog _ Domestika.jpg" width="200px">
         </div>
@@ -165,12 +171,27 @@
   <button onclick="aplis()">Parādīt apli</button>
   <button onclick="linija()">Parādīt līniju</button>
 
+    <section id="saturs">
+      <label for="vards">Ievadi savu vārdu</label>
+     
+      <input type="text" id="vards" name="vards">
+      <label for="a">Ievadi a vērtību</label>
+      <input type="number" id="a">
+      <label for="b">Ievadi b vērtību</label>
+      <input type="number" id="b">
+      <button type="button" class="btn btn-danger" onclick="aprekins()">Aprēķināt</button>
+      <p id="rezultats">Šeit būs rezultāts pēc aprēķina</p>
+    </section>
 
+
+    <div id="geeks">
+        <div class="gfg">GeeksforGeeks</div>
+        <div>A computer science portal for geeks</div>
+    </div>
+    
 <footer>&copy;Mana firma</footer>
 <script src="script.js"></script>
 
 
 </body>
-</main>
-
 </html>

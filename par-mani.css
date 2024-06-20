@@ -3,13 +3,21 @@ html {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family:Sofia, sans-serif;
-}
-
-html { 
+  font-family:Sofia, sans-serif; 
   background: url(01.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+#lapas {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+#lapas_saturs {
+  width: 100%;
+  height: 100%;
 }
